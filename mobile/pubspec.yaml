@@ -1,0 +1,28 @@
+name: msil_inspect
+description: "Maruti Suzuki DMS Inspect: on-device damage, odometer, VIN and number-plate reading. Fully offline."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # vendored: adds flat Float32List tensor I/O (see packages/onnxruntime_v2/lib/src/ort_value.dart)
+  onnxruntime_v2:
+    path: packages/onnxruntime_v2
+  image_picker: ^1.2.3
+  image: ^4.10.1
+  path_provider: ^2.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/
+    - assets/samples/

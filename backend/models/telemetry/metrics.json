@@ -1,0 +1,38 @@
+{
+  "n_rows": 19535,
+  "n_train": 15628,
+  "n_test": 3907,
+  "issue_rate_test": 0.36959303813667777,
+  "accuracy": 0.6462759150243154,
+  "issue_class_recall": 0.659972299168975,
+  "threshold": 0.5,
+  "random_state": 42,
+  "test_size": 0.2,
+  "model_path": "backend/models/telemetry/car_health.joblib",
+  "data_path": "engine_data.csv",
+  "architecture": {
+    "pipeline": [
+      "SimpleImputer(strategy=median)",
+      "RobustScaler",
+      "RandomForestClassifier"
+    ],
+    "n_estimators": 250,
+    "max_depth": 14,
+    "min_samples_leaf": 4,
+    "class_weight": "balanced",
+    "features": [
+      "rpm",
+      "oil_pressure",
+      "fuel_pressure",
+      "coolant_pressure",
+      "oil_temp",
+      "coolant_temp"
+    ]
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n     healthy       0.76      0.64      0.69      2463\n       issue       0.52      0.66      0.58      1444\n\n    accuracy                           0.65      3907\n   macro avg       0.64      0.65      0.64      3907\nweighted avg       0.67      0.65      0.65      3907\n",
+  "fixtures": {
+    "healthy": "backend/samples/telemetry/healthy.csv",
+    "issue": "backend/samples/telemetry/issue.csv",
+    "issue_obd_aliases": "backend/samples/telemetry/issue_obd_aliases.csv"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "damage_parity": {
+    "clean.jpg": {
+      "fp32_damage_px": 9817,
+      "int8_damage_px": 10906,
+      "mask_agreement": 0.9978,
+      "max_abs_prob_diff": 0.1556,
+      "fp32_s": 3.77,
+      "int8_s": 5.2
+    },
+    "damaged.jpg": {
+      "fp32_damage_px": 56383,
+      "int8_damage_px": 54223,
+      "mask_agreement": 0.996,
+      "max_abs_prob_diff": 0.1397,
+      "fp32_s": 3.79,
+      "int8_s": 4.62
+    }
+  }
+}

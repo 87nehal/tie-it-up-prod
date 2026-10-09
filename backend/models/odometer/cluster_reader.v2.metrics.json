@@ -1,0 +1,6 @@
+{
+  "train_rows": 24000,
+  "val_rows": 2000,
+  "epochs": 3,
+  "val_exact_match": 0.98
+}

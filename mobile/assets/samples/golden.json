@@ -1,0 +1,222 @@
+{
+  "gate_odometer.jpg": {
+    "size": [
+      900,
+      500
+    ],
+    "lines": [
+      {
+        "text": "ODO 29882 km",
+        "confidence": 0.799
+      }
+    ],
+    "plate": "OD029882",
+    "vin": null,
+    "odometer": 29882,
+    "odometer_engine": "odometer-ranker"
+  },
+  "gate_plate.jpg": {
+    "size": [
+      900,
+      560
+    ],
+    "lines": [
+      {
+        "text": "HR 51 NY 9785",
+        "confidence": 0.864
+      }
+    ],
+    "plate": "HR51NY9785",
+    "vin": null,
+    "odometer": null,
+    "odometer_engine": null
+  },
+  "gate_vin.jpg": {
+    "size": [
+      900,
+      420
+    ],
+    "lines": [
+      {
+        "text": "MARUTISUZUKIINDIA LTD",
+        "confidence": 0.858
+      },
+      {
+        "text": "MODELGRANDVITARA",
+        "confidence": 0.886
+      },
+      {
+        "text": "VIN: ",
+        "confidence": 0.778
+      },
+      {
+        "text": "MA3GVESR3TM772642",
+        "confidence": 0.905
+      }
+    ],
+    "plate": null,
+    "vin": "MA3GVESR3TM772642",
+    "odometer": null,
+    "odometer_engine": null
+  },
+  "odometer_lcd.png": {
+    "size": [
+      588,
+      441
+    ],
+    "lines": [
+      {
+        "text": "50",
+        "confidence": 0.663
+      },
+      {
+        "text": "6070",
+        "confidence": 0.746
+      },
+      {
+        "text": "40",
+        "confidence": 0.637
+      },
+      {
+        "text": "80",
+        "confidence": 0.652
+      },
+      {
+        "text": "06",
+        "confidence": 0.549
+      },
+      {
+        "text": "30",
+        "confidence": 0.579
+      },
+      {
+        "text": "100",
+        "confidence": 0.639
+      },
+      {
+        "text": "100",
+        "confidence": 0.748
+      },
+      {
+        "text": "20",
+        "confidence": 0.664
+      },
+      {
+        "text": "110",
+        "confidence": 0.727
+      },
+      {
+        "text": "40",
+        "confidence": 0.659
+      },
+      {
+        "text": "10",
+        "confidence": 0.603
+      },
+      {
+        "text": "60",
+        "confidence": 0.664
+      },
+      {
+        "text": "140",
+        "confidence": 0.746
+      },
+      {
+        "text": "120",
+        "confidence": 0.695
+      },
+      {
+        "text": "180",
+        "confidence": 0.747
+      },
+      {
+        "text": "20",
+        "confidence": 0.663
+      },
+      {
+        "text": "MPHkm/h",
+        "confidence": 0.821
+      },
+      {
+        "text": "808160",
+        "confidence": 0.71
+      },
+      {
+        "text": "100",
+        "confidence": 0.747
+      }
+    ],
+    "plate": "MH808160",
+    "vin": null,
+    "odometer": 91308,
+    "odometer_engine": "odometer-ranker"
+  },
+  "odometer_maruti_cluster.png": {
+    "size": [
+      1329,
+      696
+    ],
+    "lines": [
+      {
+        "text": "120 160",
+        "confidence": 0.742
+      },
+      {
+        "text": "60",
+        "confidence": 0.663
+      },
+      {
+        "text": "180",
+        "confidence": 0.704
+      },
+      {
+        "text": "15.010",
+        "confidence": 0.653
+      },
+      {
+        "text": "140",
+        "confidence": 0.53
+      },
+      {
+        "text": "60",
+        "confidence": 0.665
+      },
+      {
+        "text": "40",
+        "confidence": 0.665
+      },
+      {
+        "text": "180",
+        "confidence": 0.678
+      },
+      {
+        "text": "200",
+        "confidence": 0.726
+      },
+      {
+        "text": "20",
+        "confidence": 0.578
+      },
+      {
+        "text": "kriin",
+        "confidence": 0.625
+      },
+      {
+        "text": "220",
+        "confidence": 0.71
+      },
+      {
+        "text": "220",
+        "confidence": 0.633
+      },
+      {
+        "text": "1099",
+        "confidence": 0.572
+      }
+    ],
+    "plate": null,
+    "vin": null,
+    "odometer": 15010,
+    "odometer_engine": "odometer-ranker"
+  }
+}

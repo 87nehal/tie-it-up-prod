@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+web_uploads/
+
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*.local
+backend/data/
+backend/runs/
+
+# Generated build/cache outputs
+mobile/build/
+demo-video/build/
+pytest-cache-files-*/
+.pytest_cache/
