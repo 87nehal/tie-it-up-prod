@@ -101,8 +101,11 @@ def allocate(conn, lines: list[dict[str, Any]], fuel: str, parts_eta_hours: floa
                 "technicians": techs, "bays": bays, "hours": hours, "skills": skills}
     tech, bay = techs[0], bays[0]
     parts_ready = now + timedelta(hours=parts_eta_hours or 0)
-    start = max(now, datetime.fromisoformat(tech["free_at"]), datetime.fromisoformat(bay["free_at"]), parts_ready)
-    end = start + timedelta(hours=hours * 1.15)  # 15% for road test and QC
+    # work starts as soon as a technician and bay are free; a part still in transit only holds up the
+    # finish (45 minutes to fit it after it arrives), it does not leave the car waiting at the door
+    start = max(now, datetime.fromisoformat(tech["free_at"]), datetime.fromisoformat(bay["free_at"]))
+    end = max(start + timedelta(hours=hours * 1.15),  # 15% for road test and QC
+              parts_ready + timedelta(minutes=45) if parts_eta_hours else start)
     ready = end + timedelta(minutes=30)  # wash + delivery prep
     return {"feasible": True, "technician": tech, "bay": bay, "technicians": techs[:5], "bays": bays,
             "hours": round(hours, 1), "skills": skills, "start": start.isoformat(),
